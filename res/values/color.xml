@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="transparent">#00000000</color>
+    <color name="blue">#4c9ada</color>
+    <color name="grey">#a4a4a4</color>
+    <color name="yellow">#ff7300</color>
+    <color name="greys">#646464</color>
+    
+    <color name="BgColor">#ffd1dce9</color>
+    <color name="background_gray">#cccccc</color>
+    <color name="forhead_gray">#eeeeee</color>
+    
+    <color
+		name="class_item_bg_color">#ffffff</color>
+	<color
+		name="class_item_bg_sel_color">#d8e4f0</color>
+	
+	<color name="popup_main_background">#b0000000</color>
+    <color name="black">#000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="white">#ffffff</color>
+    <color name="no_color">#00000000</color>
+    
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    
+    <!-- 违章查询 -->
+    <color name="line_color">#ffd1dce9</color>
+
+    <color name="text_gray">#999999</color>
+
+    <color name="main_orange">#FF8C00</color>
+
+    <color name="expand_tab_text_check">#FF8C00</color>
+    <color name="expand_tab_text_uncheck">#000000</color>
+
+    <color name="comment_text_color">#a4a4a4</color>
+    <color name="comment_title_color">#000000</color>
+
+</resources>

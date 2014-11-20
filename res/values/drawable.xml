@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="expand_tab_text_check">#FF8C00</drawable>
+    <drawable name="expand_tab_text_uncheck">#000000</drawable>
+
+</resources>

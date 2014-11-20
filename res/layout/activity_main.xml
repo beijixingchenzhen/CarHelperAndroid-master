@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:id="@+id/main_tabhost">
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:orientation="vertical">
+            <FrameLayout android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:id="@android:id/tabcontent">
+                <fragment android:name="com.hdlink.online.fragments.HomePageFragment"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:id="@+id/main_homepage"
+                          android:tag="@string/main_homepage_tab"/>
+                <fragment android:name="com.hdlink.online.fragments.ShopFragment"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:id="@+id/main_shop"
+                          android:tag="@string/main_shop_tab"/>
+                <fragment android:name="com.hdlink.online.fragments.QAFragment"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:id="@+id/main_qa"
+                          android:tag="@string/main_qa_tab"/>
+                <fragment android:name="com.hdlink.online.fragments.MyProfileFragment"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:id="@+id/main_myprofile"
+                          android:tag="@string/main_profile_tab"/>
+            </FrameLayout>
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TabWidget android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:id="@android:id/tabs"
+                           android:showDividers="none"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

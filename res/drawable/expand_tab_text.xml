@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:drawable="@color/expand_tab_text_uncheck"/>
+    <item Android:drawable="@color/expand_tab_text_check" Android:state_checked="true"/>
+
+</selector>

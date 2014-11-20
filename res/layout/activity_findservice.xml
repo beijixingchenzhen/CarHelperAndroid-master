@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <fragment android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/findservice_list_frag"
+                  android:tag="findServiceListFrag"
+                  android:name="com.hdlink.online.fragments.FindServiceListFragment"/>
+        <fragment android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/findservice_map_frag"
+                  android:tag="findServiceMapFrag"
+                  android:name="com.hdlink.online.fragments.FindServiceMapFragment"/>
+    </FrameLayout>
+
+
+    <!--<com.hdlink.online.view.ExpandTabView android:layout_width="fill_parent"-->
+                                          <!--android:layout_height="wrap_content"-->
+                                          <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/findservice_filter_bar">-->
+
+    <!--</com.hdlink.online.view.ExpandTabView>-->
+
+    <!--<ListView android:layout_width="fill_parent"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:layout_weight="1"-->
+              <!--android:id="@+id/findservie_list"-->
+              <!--android:dividerHeight="10dp">-->
+
+    <!--</ListView>-->
+
+
+
+    <!--android:background="#F5F5F5"-->
+    <!--android:orientation="vertical" >-->
+    <!---->
+    <!--<include layout="@layout/activity_headline" />-->
+    <!---->
+    <!--<com.hdlink.online.view.ExpandTabView-->
+        <!--android:id="@+id/expandtab_view"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+    <!--<com.hdlink.online.view.CustomListView-->
+        <!--android:id="@+id/findservice_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#F5F5F5"-->
+        <!--android:cacheColorHint="@android:color/transparent"-->
+        <!--android:divider="#00000000"-->
+		<!--android:dividerHeight="18dp"-->
+        <!--android:fadingEdgeLength="0dp" />-->
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/collect_tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="none" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <fragment
+                    android:id="@+id/collect_shop"
+                    android:name="com.hdlink.online.activity.personalInformation.Fragment.MyCollectShopFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+
+                <fragment
+                    android:id="@+id/collect_service"
+                    android:name="com.hdlink.online.activity.personalInformation.Fragment.MyCollectServiceFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

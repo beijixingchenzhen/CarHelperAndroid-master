@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_bar_text_size">14sp</dimen>
+    <dimen name="layout_group_margin">10dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <dimen name="title_size">24dp</dimen>
+    <dimen name="common_title_size">22sp</dimen>
+    <dimen name="common_text_size">18sp</dimen>
+
+    <dimen name="findservice_popview_item_textsize">26sp</dimen>
+    <dimen name="service_detail_normal_textsize">17sp</dimen>
+
+    <!-- 违章查询 -->
+    <dimen name="query_edit_tv_size">14sp</dimen>
+</resources>

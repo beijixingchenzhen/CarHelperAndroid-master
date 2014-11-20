@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/activity_headline" />
+
+    <TextView
+        android:id="@+id/recommend_friend"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/set_up_selector"
+        android:gravity="center_vertical"
+        android:text="@string/recommend_to_friend"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/recommend_friend"
+        android:src="@drawable/revert" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/recommend_friend"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:text="@string/give_us_the_score"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2"
+        android:src="@drawable/revert" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView2"
+        android:background="#D5D5D5" />
+
+    <TextView
+        android:id="@+id/proposed_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:text="@string/propose"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView4"
+        android:src="@drawable/revert" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/proposed_feedback"
+        android:layout_alignParentLeft="true"
+        android:background="#D5D5D5" />
+
+    <TextView
+        android:id="@+id/regarding_our"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/proposed_feedback"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:text="@string/regarding_our"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/regarding_our"
+        android:background="#D5D5D5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/regarding_our"
+        android:layout_toRightOf="@+id/textView4"
+        android:src="@drawable/revert" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:text="@string/user_agreement"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:text="@string/version_update"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="#D5D5D5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView4"
+        android:src="@drawable/revert" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:src="@drawable/revert" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:text="@string/contact_customer_service"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="460px"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="dropOut()"
+        android:text="@string/log_out"
+        android:textColor="#000000"
+        android:textSize="30px" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:background="#D5D5D5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView5"
+        android:src="@drawable/revert" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/textView3"
+        android:layout_marginRight="14dp"
+        android:gravity="center_vertical"
+        android:text="(08:-21:00)                    400-820-5527"
+        android:textColor="#A5A5A5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/textView7"
+        android:text="新版本2.0"
+        android:textColor="#FF9800" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_above="@+id/regarding_our"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:gravity="center_vertical"
+        android:text="你的建议让我们变的更好"
+        android:textColor="#A5A5A5" />
+
+</RelativeLayout>

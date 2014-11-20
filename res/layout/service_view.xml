@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/service_view_shop_name"
+                  android:text="洁美汽车美容"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/common_title_size"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"/>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="5dp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/service_view_price"
+                      android:text="88"
+                      android:textSize="22sp"
+                      android:textColor="#ff0000"/>
+            <TextView style="@style/service_view_text_style"
+                      android:text="元"/>
+            <FrameLayout android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView style="@style/service_view_text_style"
+                              android:text="（原价"/>
+                    <TextView style="@style/service_view_text_style"
+                              android:id="@+id/service_view_originPrice"
+                              android:text="120"
+                              />
+                    <TextView style="@style/service_view_text_style"
+                              android:text="元）"/>
+                </LinearLayout>
+                <TextView style="@style/service_view_text_style"
+                          android:text="————————"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="10dp">
+            <TextView style="@style/service_view_text_style"
+                      android:id="@+id/service_view_addr"
+                      android:layout_weight="1"
+                      android:text="龙岗区丹竹头"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/service_view_distance"
+                      android:text="700"
+                      android:textColor="@color/black"
+                      android:textSize="24sp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="米"
+                      android:textColor="@color/black"
+                      android:textSize="24sp"
+                      android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
