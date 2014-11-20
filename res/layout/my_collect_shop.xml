@@ -6,20 +6,21 @@
     android:orientation="horizontal" >
 
     <ImageView
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="match_parent"
-        android:background="#F00000"
-        android:layout_margin="10dp" />
+        android:layout_margin="10dp"
+        android:background="#F00000" />
 
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
         android:layout_weight="1" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="vertical" >
 
             <TextView
@@ -27,14 +28,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="洁美汽车美容" />
+                android:textColor="#000000"
+                android:text="洁美汽车美容"
+                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/shop_view_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
-                android:text="龙岗区丹竹头立信路46号..." />
+                android:text="龙岗区丹竹头立信路4..."
+                android:textSize="14dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -44,13 +48,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="门店特色：" />
+                    android:text="门店特色："
+                    android:textSize="14dp" />
 
                 <TextView
                     android:id="@+id/shop_view_feature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="提供免费wifi+..." />
+                    android:text="提供免费w..."
+                    android:textSize="14dp" />
             </LinearLayout>
         </LinearLayout>
 

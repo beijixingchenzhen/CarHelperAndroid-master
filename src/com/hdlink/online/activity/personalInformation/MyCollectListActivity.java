@@ -10,6 +10,7 @@ import com.hdlink.online.activity.personalInformation.Fragment.MyCollectShopFrag
 import com.hdlink.online.activity.personalInformation.Fragment.NoPaymentOrderListFragment;
 import com.hdlink.online.fragments.BaseFragment;
 
+import android.R.string;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -22,6 +23,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TabHost;
+import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,24 +39,37 @@ public class MyCollectListActivity extends BaseActivity {
 
 	private Button back_btn, right_btn;
 	private TextView map_txvTitle;
-	private FragmentTabHost mTabHost;
+	private TabHost tabhost;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.my_collect_list);
-		 initTabs();
+		initTabs();
 
 	}
 
 	private void initTabs() {
 
-		TabHost tabhost = (TabHost) findViewById(R.id.collect_tabhost);
+		tabhost = (TabHost) findViewById(android.R.id.tabhost);
 		tabhost.setup();
-		tabhost.addTab(tabhost.newTabSpec(getResources().getString(R.string.main_homepage_tab)).setIndicator(createTab("商户")).setContent(R.id.collect_service));
-		
-		tabhost.addTab(tabhost.newTabSpec(getResources().getString(R.string.main_shop_tab)).setIndicator(createTab("服务")).setContent(R.id.collect_shop));
+		String shopTab = getResources().getString(R.string.main_homepage_tab);
+
+		// TabSpec tabSpecShop=tabhost.newTabSpec(shopTab);
+		// tabSpecShop.setIndicator(createTab("商户"));
+		// tabSpecShop.setContent(R.id.collect_service);
+		// tabhost.addTab(tabSpecShop);
+
+		TabSpec tab1 = tabhost.newTabSpec(shopTab);// 创建标签
+		tab1.setIndicator(createTab("商户"));// 设置tab标题
+		tab1.setContent(R.id.collect_shop);// 设置Tab布局内容
+		tabhost.addTab(tab1);// 将tab加入TabHost中
+
+		TabSpec tab2 = tabhost.newTabSpec("服务");
+		tab2.setIndicator(createTab("服务"));
+		tab2.setContent(R.id.collect_service);
+		tabhost.addTab(tab2);
 
 		tabhost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
 			@Override
@@ -62,12 +77,12 @@ public class MyCollectListActivity extends BaseActivity {
 				setCurrTab(tabId);
 			}
 		});
-
+		
 		setCurrTab(getResources().getString(R.string.main_homepage_tab));
 	}
 
 	private View createTab(String name) {
-		View v = LayoutInflater.from(self).inflate(R.layout.main_tab, null);
+		View v = LayoutInflater.from(self).inflate(R.layout.my_top_tab, null);
 		((TextView) v.findViewById(R.id.main_tab_text)).setText(name);
 		return v;
 	}
